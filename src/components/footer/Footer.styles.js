@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
     background: ${(props) => props.theme.colors.footer};
-    color: #fff;
+    color: ${(props) => props.theme.colors.text};
     padding: 100px 0 60px;
 
     ul {
@@ -17,7 +17,7 @@ export const StyledFooter = styled.footer`
         text-align: right;
     }
 
-    @media(max-width: ${(props) => props.theme.mobile}) {
+     @media(max-width: ${(props) => props.theme.mobile}) {
         text-align: center;
 
         ul {

@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background: ${(props) => props.theme.colors.body};
-        color: hsl(192, 100%, 9%);
+        color: ${(props) => props.theme.colors.text};
         font-family: "Poppins", sans-serif;
         font-size: 1.15em;
         margin: 0;

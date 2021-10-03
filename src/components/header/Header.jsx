@@ -3,14 +3,18 @@ import { StyledHeader, Nav, Logo, Image } from "./Header.styles";
 import { Container } from "../Container.styles";
 import { Button } from "../button/Button.styles";
 import { Flex } from "../Flex.styles"; // You can use this when you want to style something side by side
+import { StyledThemeSwitch } from "../themeswitch/themeSwitch.styles";
 
-const Header = () => {
+const Header = ({ handleThemeSwitch, icon }) => {
     return (
         <StyledHeader>
             <Container>
                 <Nav>
                     <Logo src="../images/logo.svg" alt="" />
                     <Button>Try It Free</Button>
+                    <StyledThemeSwitch onClick={handleThemeSwitch}>
+                        {icon}
+                    </StyledThemeSwitch>
                 </Nav>
                 <Flex>
                     <div>
